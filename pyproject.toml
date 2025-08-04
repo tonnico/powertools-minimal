@@ -1,0 +1,24 @@
+[project]
+name = "minimal-powertools"
+version = "0.1.0"
+description = "Minimal example for powertools-lambda-python issue #7039"
+readme = "README.md"
+authors = [
+    { name = "Nico Tonnhofer", email = "github@tonnhofer.net" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aws-lambda-powertools[parser]",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.9"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+aws-lambda-powertools = { path = "../powertools-lambda-python" }
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
