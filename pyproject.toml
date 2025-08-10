@@ -20,5 +20,6 @@ aws-lambda-powertools = { path = "../powertools-lambda-python" }
 
 [dependency-groups]
 dev = [
+    "inline-snapshot>=0.27.1",
     "pytest>=8.4.1",
 ]
